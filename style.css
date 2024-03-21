@@ -1,0 +1,382 @@
+.contenedor-encriptador {
+    width: 1220px;
+    height: 600px;
+    background: #F3F5FC;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.logo-imagen {
+    width: 120px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: 40px;
+    gap: 40px;
+    display: block;
+}
+
+.input-texto {
+    width: 577px;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 240px;
+    font-size: 20px;
+    line-height: 48px;
+    color: #0A3871;
+    border: none;
+    background: none;
+    word-wrap: break-word;
+}
+
+.input-texto::placeholder {
+    color: #0A3871;
+}
+
+.input-texto:focus {
+    outline: none;
+}
+
+
+.frame-aviso {
+    width: 229px;
+    height: 18px;
+    margin: 0px 0 0 240px;
+    gap: 8px;
+}
+
+.aviso-encriptar {
+    width: 215px;
+    height: 18px;
+    opacity: 80%;
+    font-size: 12px;
+    line-height: 18px;
+    color: #495057;
+}
+
+.botones-enviar {
+    width: 680px;
+    height: 97px;
+    margin: 10px 0 0 240px;
+    gap: 24px;
+}
+
+.boton-encriptar {
+    color: white;
+    width: 230px;
+    height: 50px;
+    border-radius: 24px;
+    border-width: 1px;
+    padding: 5px;
+    gap: 8px;
+    background: #0A3871;
+    font-size: 20px;
+}
+
+.boton-encriptar:active{
+    border-color: lightgreen;;
+}
+
+.boton-desencriptar {
+    width: 230px;
+    height: 50px;
+    border-radius: 24px;
+    border-width: 1px;
+    padding: 5px;
+    gap: 8px;
+    color: #0A3871;
+    font-size: 20px;
+    color: #0A3871;
+    font-weight: lighter;
+    border-color: #0A3871;
+}
+
+.contenedor-ingresar-texto {
+    width: 60%;
+    float: left;
+}
+
+.cuadro-desencriptador {
+    width: 400px;
+    height: 530px;
+    margin-left: 900px;
+    border-radius: 32px;
+    background: white;
+    border-width: 5px;
+    box-shadow: 0px 10px 15px -8px #000000;
+}
+
+.texto-encriptado {
+    width: 300px;
+    padding: 30px 20px 5px 50px;
+    font-size: 20px;
+    line-height: 36px;
+    color: #0A3871;
+    background: none;
+    word-wrap: break-word;
+}
+
+
+.munieco-imagen {
+    width: 250px;
+    height: 250px;
+    padding: 10px 0 0 70px;
+    display: inline-block;
+}
+
+.aviso-mensaje-no-encontrado {
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #343A40;
+}
+
+.aviso-ingresar-texto {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.boton-copiar {
+    display: none;
+    width: 230px;
+    height: 50px;
+    border-radius: 24px;
+    border-width: 1px;
+    margin: 0 20px 20px 90px;
+    gap: 8px;
+    color: #0A3871;
+    font-size: 20px;
+    color: #0A3871;
+    font-weight: lighter;
+    border-color: #0A3871;
+    position: absolute;
+    bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+    left: 900px; /* Ajusta la distancia desde el borde izquierdo */
+}
+
+.oculto {
+    display: none;
+}
+
+@media screen and (max-width:770px) {
+    .contenedor-encriptador {
+        width: auto;
+        height: auto;
+        background: #F3F5FC;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+    }
+    
+
+    .input-texto {
+        width: 300px;
+        height: 400px;
+        margin-top: 70px;
+        margin-left: 80px;
+        font-size: 20px;
+        line-height: 48px;
+        color: #0A3871;
+        border: none;
+        background: none;
+        word-wrap: break-word;
+    }
+
+    .botones-enviar {
+        width: 500px;
+        height: 97px;
+        margin: 10px 0 0 40px;
+        gap: 24px;
+    }
+    .boton-encriptar {
+        color: white;
+        width: 200px;
+        height: 50px;
+        border-radius: 24px;
+        border-width: 1px;
+        padding: 5px;
+        gap: 8px;
+        background: #0A3871;
+        font-size: 20px;
+    }
+    
+    .boton-desencriptar {
+        width: 200px;
+        height: 50px;
+        border-radius: 24px;
+        border-width: 1px;
+        padding: 5px;
+        gap: 8px;
+        color: #0A3871;
+        font-size: 20px;
+        color: #0A3871;
+        font-weight: lighter;
+        border-color: #0A3871;
+    }
+    .cuadro-desencriptador {
+        width: 430px;
+        height: 200px;
+        margin-top: 600px;
+        margin-left: 40px;
+        border-radius: 32px;
+        background: white;
+        border-width: 5px;
+        box-shadow: 0px 10px 15px -8px #000000;
+    }
+    .munieco-imagen {
+        display: none;
+    }
+    
+    .aviso-mensaje-no-encontrado {
+        padding: 20px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.8px;
+        color: #343A40;
+    }
+    
+    .aviso-ingresar-texto {
+        padding: 0 20px 20px 20px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .boton-copiar {
+        display: none;
+        width: 360px;
+        height: 50px;
+        border-radius: 24px;
+        border-width: 1px;
+        margin: 0 20px 20px 40px;
+        gap: 8px;
+        color: #0A3871;
+        font-size: 20px;
+        color: #0A3871;
+        font-weight: lighter;
+        border-color: #0A3871;
+        position: fixed;
+        bottom: 160px; /* Ajusta la distancia desde el borde inferior */
+        left: 45px; /* Ajusta la distancia desde el borde izquierdo */
+    }
+}
+
+@media screen and (max-width:412px) {
+    .contenedor-encriptador {
+        width: auto;
+        height: auto;
+        background: #F3F5FC;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+    }
+    
+
+    .input-texto {
+        width: 300px;
+        height: 400px;
+        margin-top: 70px;
+        margin-left: 80px;
+        font-size: 20px;
+        line-height: 48px;
+        color: #0A3871;
+        border: none;
+        background: none;
+    }
+
+    .botones-enviar {
+        width: 500px;
+        height: 97px;
+        margin: 0px 0 0 40px;
+        gap: 24px;
+    }
+
+    
+    .frame-aviso {
+    width: 229px;
+    height: 18px;
+    margin: 320px 0 0 40px;
+    gap: 8px;
+    }
+
+    .boton-encriptar {
+        color: white;
+        width: 180px;
+        height: 50px;
+        border-radius: 24px;
+        border-width: 1px;
+        padding: 5px;
+        gap: 8px;
+        background: #0A3871;
+        font-size: 20px;
+    }
+    
+    .boton-desencriptar {
+        width: 180px;
+        height: 50px;
+        border-radius: 24px;
+        border-width: 1px;
+        padding: 5px;
+        gap: 8px;
+        color: #0A3871;
+        font-size: 20px;
+        color: #0A3871;
+        font-weight: lighter;
+        border-color: #0A3871;
+    }
+    .cuadro-desencriptador {
+        width: 350px;
+        height: 480px;
+        margin-top: 900px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        border-radius: 32px;
+        background: white;
+        border-width: 5px;
+        box-shadow: 0px 10px 15px -8px #000000;
+    }
+    .munieco-imagen {
+        display: none;
+    }
+    
+    .aviso-mensaje-no-encontrado {
+        padding: 20px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.8px;
+        color: #343A40;
+    }
+    
+    .aviso-ingresar-texto {
+        padding: 0 20px 20px 20px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .boton-copiar {
+        display: none;
+        width: 300px;
+        height: 50px;
+        border-radius: 24px;
+        border-width: 1px;
+        margin: 0 20px 20px 40px;
+        gap: 8px;
+        color: #0A3871;
+        font-size: 20px;
+        color: #0A3871;
+        font-weight: lighter;
+        border-color: #0A3871;
+        position: fixed;
+        bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+        left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+    }
+}

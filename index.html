@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body class="contenedor-encriptador">
+        <img class="logo-imagen" src="imagenes/Logo.png">
+
+        <div class="contenedor-ingresar-texto">
+            <textarea type="text" rows="4" cols="50" id="textoUsuario" class="input-texto" required placeholder="Ingrese el texto aquí"></textarea>
+            <fieldset class="frame-aviso">
+                <p class="aviso-encriptar">! Solo letras minúsculas y sin acentos</p>
+            </fieldset>
+            <fieldset class="botones-enviar">
+                <input  onclick="encriptarTexto();" type="submit" value="Encriptar" class="boton-encriptar">
+                <input onclick="desencriptarTexto();" type="submit" value="Desencriptar" class="boton-desencriptar">
+            </fieldset>
+        </div>
+        <div class="cuadro-desencriptador">
+            <p id="mostrador-de-texto" class="texto-encriptado"></p>
+            <img id="munieco-imagen" class="munieco-imagen" src="imagenes/Muñeco.png">
+            <p id="aviso-mensaje-no-encontrado" class="aviso-mensaje-no-encontrado">Ningún mensaje fue encontrado</p>
+            <p id="aviso-ingresar-texto" class="aviso-ingresar-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <input id="botonCopiar" onclick="copiarTexto();" type="submit" value="Copiar" class="boton-copiar">
+        </div>
+        <script src="encriptador.js"></script>
+    </body>
+</html>
